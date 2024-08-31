@@ -1,0 +1,99 @@
+.rel
+{
+    height: 100%;
+    width: 100%;
+}
+.hindus
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.freepik.com/premium-photo/magic-soft-fog-diwali-festival-poster-background-with-empty-copy-space_1053-24849.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: 105% 100%;
+}
+.christ
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("https://img.freepik.com/premium-photo/view-wooden-cross-sand_23-2149366116.jpg?w=1060");
+    background-repeat: no-repeat;
+    background-size: 105% 100%;
+}
+.muslims
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://i.pinimg.com/564x/c0/a6/09/c0a609c6119c926a30bb53ee9d206499.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.main1
+{
+    height: 80%;
+    width: 70%;
+    background-color: #758694;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.main2
+{
+    height: 80%;
+    width: 70%;
+    background:linear-gradient(#74512D,#AF8F6F,#F8F4E1,#AF8F6F,#74512D);
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.main3
+{
+    height: 80%;
+    width: 70%;
+    background-color: #EECEB9;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  .iframe_card
+  {
+    height: 355px;
+    width: 260px;
+    margin: 5% 3% 2% 4.5%;
+    /* border: 3px solid black; */
+    transition: all 0.3s linear;
+    border-radius: 5PX;
+  }
+iframe
+{
+    height: 100%;
+    width: 100%;
+    /* border: 3px solid black; */
+    transition: all 0.3s linear;
+    border-radius: 5PX;
+}
+.iframe:hover
+{
+    transform: scale(1.05);
+    background-color: white;
+    opacity: 1;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="../CSS/cardGame.css">
+</head>
+<body>
+    <div id="gameSelection" class="game">
+        <div class="section" id="card">
+            <div class="cards"></div>
+        </div>
+        <div class="section1" id="snake"></div>
+        <div class="section2" id="toys"></div>
+    </div>
+    <div id="gameContainer" style="display:none;">
+        <div class="cardSet" id="set1"></div>
+        <div class="divider"></div>
+        <div class="cardSet" id="set2"></div>
+    </div>
+    <div id="score" style="display:none;">Score: 0</div>
+    <div id="chocolate" style="display:none;">
+        <img src="https://img.freepik.com/free-photo/dark-chocolate-truffles-close-up_23-2148349177.jpg?ga=GA1.1.639928877.1718960180&semt=ais_user" alt="Chocolate">
+    </div>
+    <audio id="soundEffect" src="https://pixabay.com/sound-effects/level-passed-143039/" preload="auto"></audio>
+    <script>
+        document.getElementById('toys').addEventListener('click', function() {
+            window.location.href = 'frog.html';
+        });
+        document.getElementById('snake').addEventListener('click', function() {
+            window.location.href = 'snake.html';
+        });
+    </script>
+    <script src="../JS/cardGame.js"></script>
+</body>
+</html>

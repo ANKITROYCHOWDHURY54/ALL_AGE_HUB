@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background-image: url('https://img.freepik.com/free-vector/blank-landscape-nature-park-scene-with-swamp_1308-46461.jpg?ga=GA1.1.639928877.1718960180&semt=ais_user');
+    /* background-repeat: no-repeat; */
+    background-size: 100% 100%;
+}
+
+.random-number, .score {
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.random-number {
+    left: 10px;
+}
+
+.score {
+    right: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(3, 150px);
+    gap: 10px;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Match grid cell size */
+    height: 150px; /* Match grid cell size */
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+.div1 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url('https://img.freepik.com/free-vector/organic-flat-frog-illustrated_23-2148953184.jpg?ga=GA1.1.639928877.1718960180&semt=ais_user');
+}
+
+.div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11 {
+    background-image: url('https://img.freepik.com/premium-vector/water-lily-flower-leaf-pink-natural-blossom-isolated-white-background_543062-6407.jpg?ga=GA1.1.639928877.1718960180&semt=ais_user');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#chocolate {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#chocolate img {
+    width: 50%;
+    border-radius: 15px;
+}
+
+#chocolate p {
+    font-size: 1.5em;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets in portrait mode */
+@media (max-width: 768px) {
+    .random-number, .score {
+        font-size: 1.2em;
+    }
+
+    .container {
+        grid-template-rows: repeat(4, 100px);
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    .container div {
+        width: 100px;
+        height: 100px;
+        font-size: 1.5em;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .random-number, .score {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .container {
+        grid-template-rows: repeat(4, 70px);
+        grid-template-columns: repeat(3, 70px);
+        gap: 5px;
+    }
+
+    .container div {
+        width: 70px;
+        height: 70px;
+        font-size: 1em;
+    }
+}

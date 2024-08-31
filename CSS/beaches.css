@@ -1,0 +1,125 @@
+* { 
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family : "Poppins", sans-serif;
+  }
+  body {
+    display : flex;
+    align-items : center;
+    justify-content : space-evenly;  
+    /* background-color:#43345d; */
+    background-image: url("https://cdn.wallpapersafari.com/83/85/Sqgy6m.jpg");
+    /* background-size: 100% 100%; */
+    /* min-height : 800px; */
+  }
+  .beach_head{
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: 600;
+    background-color: rgba(67, 52, 93, 0.9); /* Optional: Add background color with some opacity */
+    z-index: 1000;
+  }
+  .beaches_parent {
+    position : relative;
+    width : 100%;
+    display : flex;
+    flex-direction: column;
+    /* align-items : center;
+    justify-content : center; */
+    flex-wrap : wrap;
+    padding : 30px;  
+  }
+  .beach_child{
+    position: relative;
+    width : 100%;
+    display : flex;
+    align-items : center;
+    justify-content :space-evenly;
+    flex-wrap : wrap;
+    padding : 30px;
+    /* gap: 20px; */
+    /* margin-top: 80px; */
+  }
+  .beaches_parent .beaches_card1 {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color :#fff;
+    /* border: 3px solid grey; */
+    /* border: 2px solid black; */
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .beaches_parent .beaches_card1:hover {
+    height : 320px;    
+  }
+  
+  
+  .beaches_parent .beaches_card1 .beaches_image1 {
+    position : relative;
+    width : 260px;
+    height : 260px; 
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .beaches_parent .beaches_card1 .beaches_image1 img {
+    max-width : 100%;
+    border-radius: 15px;
+  }
+  
+  .beaches_parent .beaches_card1 .beaches_content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .beaches_parent .beaches_card1:hover .beaches_content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+  /* .beach_text{
+    background-color: red;
+    font-size: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    display: block;
+  }
+  .beach_text:hover{
+    overflow: hidden;
+  } */
+  /* .beach_child2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+  } */

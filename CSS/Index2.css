@@ -1,0 +1,3271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.back{
+    background-color: white;
+    width: 100%;
+    height: 100svh;
+}
+.head{
+   background-color:black;
+    width: 100%;
+    height: 12svh;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.head i{
+    display: none;
+}
+.menubar{
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    height: 220px;
+    width: 150px;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    position: fixed;
+    left: 75%;
+    top: 12.5%; 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+.logo{
+    width: 50%;
+    height: 10svh;
+    display: flex;
+    position: relative;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 10%;
+    top: 8%;
+}
+.options{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+.options a:hover{
+    color: aqua;
+    transform: scale(1.18);
+    text-shadow: 0px 0px 10px whitesmoke;
+}
+#home{
+    width: 100%;
+    height: 100svh;
+}
+.parent{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: fit-content;
+}
+.child{
+    height: 98svh;
+    width: 100%;
+    font-size: 32px;
+    position: relative;
+    perspective: 300;
+}
+.inner-child{
+    position: relative;
+    left: 0%;
+    height: 98svh;
+    width: 100%;
+    margin-top: 80px;
+    background-color: #3D52A0;
+}
+.inner-child img{
+    opacity: 50%;
+}
+.inner-child p{
+    position: absolute;
+    top: 25%;
+    left: 22%;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    font-size: 40px;
+    animation: example 2s ease infinite;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.inner-child .p3{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    color: blue;
+    text-shadow: 0px 0px 4px black;
+    font-size: 200px;
+    font-style: italic;
+    transition: all 1s ease;
+    animation: example1 2s ease infinite;
+}
+@keyframes example1 {
+    0%{
+        text-shadow: 0px 0px 4px white;
+    }
+    50%{
+        text-shadow: 0px 0px 20px white;
+    }
+    100%{
+        text-shadow: 0px 0px 4px white;
+    }
+}
+.inner-child1{
+    position: relative;
+    left: 0%;
+    height: 98svh;
+    width: 100%;
+    margin-top: 80px;
+    background-color: #3D52A0;
+}
+.inner-child1 img{
+    opacity: 50%;
+}
+.inner-child1 p{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 100px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.inner-child1 .p2{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    font-size: 40px;
+}
+.inner-child1 .p3{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    color: blue;
+    text-shadow: 0px 0px 4px white;
+    font-size: 60px;
+    font-style: italic;            
+}
+.inner-child3{
+    position: relative;
+    left: 0%;
+    height: 98svh;
+    width: 100%;
+    margin-top: 80px;
+}
+.inner-child3 p{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    color: red;
+    text-shadow: 0px 0px 3px black;
+    font-size: 100px;
+}
+.inner-child3 .p2{
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    font-size: 100px;
+}
+.inner-child3 .p3{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    color: greenyellow;
+    text-shadow: 0px 0px 3px white;
+    font-size: 100px;            
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+button{
+    height: 50px;
+    width: 350px;
+}
+li button{
+    display: none;
+}
+.slick-dots{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    color: white;
+}   
+.prev_button{   
+    border-radius: 50%;
+}
+#about{
+    width: 100%;
+    height: 160svh;
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4,#ADBBDA,#EDEBF5);
+    position: relative;
+}
+#about h2{
+    color: white;
+    font-style: italic;
+    position: absolute;
+    top: 7%;
+    left: 22%;
+    font-size: 80px;
+    text-shadow: 0px 0px 10px black;
+    animation: ex 2s ease infinite;
+
+}
+@keyframes ex {
+    0%{
+        text-shadow: 0px 0px 5px red;
+        transform: scale(1.01);
+    }
+    25%{
+        text-shadow: 0px 0px 5px blue;
+    }
+    50%{
+        text-shadow: 0px 0px 5px green;
+        transform: scale(1.10);
+    }
+    75%{
+        text-shadow: 0px 0px 5px black;
+    }
+    100%{
+        text-shadow: 0px 0px 5px red;
+        transform: scale(1.01);
+    }
+}
+.head1{
+    width: 100%;
+    height: 150svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+    top: 20%;
+    column-gap: 150px;
+}
+.head1 .box1{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    /* margin-top:100px;
+    margin-left: 100px; */
+    border-radius: 20px;
+    transition: all 1s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+.head1 .box1:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box1 .before{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    text-align: center;
+    font-size: 28px;
+}
+.head1 .box1 .before p{
+    font-size: 12px;
+    color: white;
+}
+.head1 .box1:hover .before{
+    top: 70%;
+}
+.head1 .box1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box1:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box2{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    /* margin-top:100px;
+    margin-left: 210px; */
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.head1 .box2:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box2 .before{
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.head1 .box2:hover .before{
+    top: 70%;
+}
+.head1 .box2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box2:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box2 .before p{
+    font-size: 12px;
+    color: white;
+}
+.head1 .box3{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* margin-top:100px;
+    margin-left: 200px; */
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.head1 .box3:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box3 .before{
+    content: "";
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.head1 .box3:hover .before{
+    top: 70%;
+}
+.head1 .box3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box3:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box3 .before p{
+    font-size: 12px;
+    color: white;
+}
+.head1 .box4{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* margin-top:-90px;
+    margin-left: 100px; */
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.head1 .box4:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box4 .before{
+    content: "";
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+
+    text-align: center;
+    font-size: 25px;
+}
+.head1 .box4:hover .before{
+    top: 70%;
+}
+.head1 .box4 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box4:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box4 .before p{
+    font-size: 12px;
+    color: white;
+}
+.head1 .box5{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* margin-top:-90px;
+    margin-left: 210px; */
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.head1 .box5:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box5 .before{
+    content: "";
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.head1 .box5:hover .before{
+    top: 70%;
+}
+.head1 .box5 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box5:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box5 .before p{
+    font-size: 12px;
+    color: white;
+}
+.head1 .box6{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.head1 .box6:hover{
+    transform: scale(1.01);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px whitesmoke;
+}
+.head1 .box6 .before{
+    content: "";
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 20px;
+    top: 100%;
+    transition: all 1s ease;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.head1 .box6:hover .before{
+    top: 70%;
+}
+.head1 .box6 img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.head1 .box6:hover img{
+    border-radius: 20px;
+    height: 75%;
+    transform: scale(0.8);
+}
+.head1 .box6 .before p{
+    font-size: 12px;
+    color: white;
+}
+#Job{
+    width: 100%;
+    height: 120svh;
+    background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4,#ADBBDA,#EDEBF5);
+    position: relative;
+    border: 1px solid white;
+    display: flex;
+}
+#Job .sidebox{
+    background-color: rgb(96, 96, 241);
+    width: 20%;
+    height: 100svh;
+    position: relative;
+    display: none;
+
+}
+#Job .sidebox h2{
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+#Job .sidebox .container1{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    color: white;
+}
+#contact{
+    width: 100%;
+    height: 60svh;
+    background: linear-gradient(to right,rgb(63, 63, 63),black);
+    position: relative;
+}
+.container2{
+
+    width: 100%;
+    height: 80svh;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container2 .j1{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    font-size: 40px;
+    position: relative;
+}
+.container2 .j1 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+.container2 .j1 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j1 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j1:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j2{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j2 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j2 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j2 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j2:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j3{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j3 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j3 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j3 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j3:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j4{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j4 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j4 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j4 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j4:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j5{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j5 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j5 p{
+    font-size: 18px;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j5 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j5:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j6{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j6 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j6 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j6 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j6:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j7{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j7 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j7 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j7 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j7:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.container2 .j8{
+    background-color: white;
+    width: 100%;
+    height: 10svh;
+    border: 1px solid black;
+    transition: all 1ms ease;
+    position: relative;
+}
+.container2 .j8 i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 40px;
+}
+.container2 .j8 p{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container2 .j8 .t1{
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: none;
+}
+.container2 .j8:hover{
+    box-shadow: 0px 0px 10px 5px gray;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+.Mainbody{
+    background-color: white;
+    width: 100%;
+    height: 120svh;
+    position: relative;
+}
+.Mainbody p{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+.Mainbody .t1{
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: lightslategray;
+}
+.Mainbody .Job1st{  
+    width: 100%;
+    height: 20svh;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.Mainbody .Job1st:hover{
+    box-shadow: 0px 0px 10px grey;
+    transform: scale(1);
+}
+.Job1st i{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.Job1st p{
+    color: rgb(255, 70, 70);
+    position: absolute;
+    left: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.Job1st .t1{
+    color: lightseagreen;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 13px;
+    font-family: sans-serif;    
+}
+.Job1st #i1{
+    font-size: 14px;
+    position: absolute;
+    left: 32%;
+    top: 18%;
+}
+.Job1st #i2{
+    font-size: 14px;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+}
+.Job1st .loc1{
+    color: lightslategrey;
+    position: absolute;
+    left: 16.5%;
+    top: 60%;
+    font-size: 13px;
+}
+.Job1st .box1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    border: 3px solid green;
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+.Job1st .box1 p{
+    color: green;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.Job1st .box1:hover{
+    background-color: green;
+}
+.Job1st .box1:hover p{
+    color: white;
+}
+.Mainbody .Job2nd{  
+    width: 100%;
+    height: 20svh;
+    position: absolute;
+    top: 48.5%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.Mainbody .Job2nd:hover{
+    box-shadow: 0px 0px 10px grey;
+    transform: scale(1);
+}
+.Job2nd i{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.Job2nd p{
+    color: rgb(255, 70, 70);
+    position: absolute;
+    left: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.Job2nd .t1{
+    color: lightseagreen;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 13px;
+    font-family: sans-serif;    
+}
+.Job2nd #i1{
+    font-size: 14px;
+    position: absolute;
+    left: 32%;
+    top: 18%;
+}
+.Job2nd #i2{
+    font-size: 14px;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+}
+.Job2nd .loc1{
+    color: lightslategrey;
+    position: absolute;
+    left: 16.5%;
+    top: 60%;
+    font-size: 13px;
+}
+.Job2nd .box1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    border: 3px solid red;
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+.Job2nd .box1 p{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.Job2nd .box1:hover{
+    background-color: red;
+}
+.Job2nd .box1:hover p{
+    color: white;
+}
+.box1 #p1{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    font-size: 13px;
+    color: lightslategray;
+    font-family: sans-serif;
+}
+.Mainbody .Job3rd{  
+    width: 100%;
+    height: 20svh;
+    position: absolute;
+    top: 67%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.Mainbody .Job3rd:hover{
+    box-shadow: 0px 0px 10px grey;
+    transform: scale(1);
+}
+.Job3rd img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+}
+.Job3rd i{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.Job3rd p{
+    color: rgb(255, 70, 70);
+    position: absolute;
+    left: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.Job3rd .t1{
+    color: lightseagreen;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 13px;
+    font-family: sans-serif;    
+}
+.Job3rd #i1{
+    font-size: 14px;
+    position: absolute;
+    left: 38%;
+    top: 18%;
+}
+.Job3rd #i2{
+    font-size: 14px;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+}
+.Job3rd .loc1{
+    color: lightslategrey;
+    position: absolute;
+    left: 16.5%;
+    top: 60%;
+    font-size: 13px;
+}
+.Job3rd .box1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    border: 3px solid rgb(56, 56, 255);
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+.Job3rd .box1 p{
+    color: rgb(56, 56, 255);
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.Job3rd .box1:hover{
+    background-color: rgb(56, 56, 255);
+}
+.Job3rd .box1:hover p{
+    color: white;
+}
+.box1 #p1{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    font-size: 13px;
+    color: lightslategray;
+    font-family: sans-serif;
+}
+.Mainbody .Job4th{  
+    width: 100%;
+    height: 20svh;
+    position: absolute;
+    top: 83%;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.Mainbody .Job4th:hover{
+    box-shadow: 0px 0px 10px grey;
+    transform: scale(1);
+}
+.Job4th img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+}
+.Job4th i{
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.Job4th p{
+    color: rgb(255, 70, 70);
+    position: absolute;
+    left: 15%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.Job4th .t1{
+    color: lightseagreen;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    font-size: 13px;
+    font-family: sans-serif;    
+}
+.Job4th #i1{
+    font-size: 14px;
+    position: absolute;
+    left: 38%;
+    top: 18%;
+}
+.Job4th #i2{
+    font-size: 14px;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+}
+.Job4th .loc1{
+    color: lightslategrey;
+    position: absolute;
+    left: 16.5%;
+    top: 60%;
+    font-size: 13px;
+}
+.Job4th .box1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    border: 3px solid rgb(56, 56, 255);
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 10px;
+}
+.Job4th .box1 p{
+    color: rgb(56, 56, 255);
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.Job4th .box1:hover{
+    background-color: rgb(56, 56, 255);
+}
+.Job4th .box1:hover p{
+    color: white;
+}
+.box1 #p1{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    font-size: 13px;
+    color: lightslategray;
+    font-family: sans-serif;
+}
+#Candidate{
+    background-color: white;
+    widows: 100%;
+    height: 98svh;
+    position: relative;
+}
+#Candidate p{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+#Candidate .t1{
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: lightslategray;
+}
+.cont{
+    width: 100%;
+    height: 120svh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: absolute;
+    top: 30%; */
+}
+.cont .one{
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: all 1s ease;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20%;
+    left: 10%; */
+}
+.cont .one:hover{
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+}
+.cont .two{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: all 1s ease;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20%;
+    left: 45%; */
+}
+.cont .two:hover{
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+}
+.cont .three{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transition: all 1s ease;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20%;
+    left: 80%; */
+}
+.cont .three:hover{
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 10px;
+}
+.three .imag1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30%;
+    top: -20%;
+}
+.imag1 img{
+    border-radius: 50%;
+}
+.cont .txt{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+.txt h5{
+    font-size: 15px;
+    color: lightslategrey;
+    font-family: sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.three .txt .h5{
+    font-size: 12px;
+    color: rgb(252, 86, 86);
+    font-family: sans-serif;
+    position: absolute;
+    left: 28%;
+    top: 20%;
+}
+.three .txt img{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.three .txt #i2{
+    position: absolute;
+    top: 80%;
+    left: 28%;
+}
+.three .txt .loc1{
+    color: lightslategray;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+.two .imag1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30%;
+    top: -20%;
+}
+.imag1 img{
+    border-radius: 50%;
+}
+.cont .txt{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+.txt h5{
+    font-size: 15px;
+    color: lightslategrey;
+    font-family: sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+.two .txt .h5{
+    font-size: 12px;
+    color: rgb(252, 86, 86);
+    font-family: sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+.two .txt img{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.two .txt #i2{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+.two .txt .loc1{
+    color: lightslategray;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+.one .imag1{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 30%;
+    top: -20%;
+}
+.imag1 img{
+    border-radius: 50%;
+}
+.cont .txt{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
+.txt h5{
+    font-size: 15px;
+    color: lightslategrey;
+    font-family: sans-serif;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+.txt .h5{
+    font-size: 12px;
+    color: rgb(252, 86, 86);
+    font-family: sans-serif;
+    position: absolute;
+    left: 32%;
+    top: 20%;
+}
+.txt img{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.txt #i2{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+.txt .loc1{
+    color: lightslategray;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+#contact h1{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 40px;
+    color: white;
+}
+#contact .h1{
+    position: absolute;
+    left: 38%;
+    top: 8%;
+    font-size: 30px;
+    color: white;
+}
+#contact h6{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-size: 12px;
+    color: white;
+}
+#contact i{
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    cursor: pointer;
+}
+#contact #f1{
+    position: absolute;
+    top: 58%;
+    left: 13%;
+    cursor: pointer;
+}
+#contact #f2{
+    position: absolute;
+    top: 58%;
+    left: 16%;
+    cursor: pointer;
+}
+#contact #f3{
+    position: absolute;
+    top: 58%;
+    left: 19%;
+    cursor: pointer;
+}
+#contact #f4{
+    position: absolute;
+    top: 58%;
+    left: 22%;
+    cursor: pointer;
+}
+#contact #f5{
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    cursor: pointer;
+}
+#contact li{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-size: 18px;  
+}
+#contact .l21{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 30%;  
+}
+#contact .l3{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 40%;  
+}
+#contact .l4{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 50%;  
+}
+#contact .l5{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+}
+#contact .l6{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 70%
+      
+}
+.AppStore{
+    width: 280px;
+    height: 80px;
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.AppStore img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.PlayStore{
+    width: 280px;
+    height: 80px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.PlayStore img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}   
+#contact .copy{
+    width: 100%;
+    height: 5svh;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    .menubar{
+        position: fixed;
+        left: 68%;
+    }
+    .inner-child .p3{
+        font-size: 60px;
+        position: absolute;
+        left: 15%;
+        top: 40%;
+    }
+    .inner-child p{
+        font-size: 30px;
+        position: absolute;
+        left: 30%;
+        top: 35%;
+    }
+    .inner-child1 p{
+        font-size: 40px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    .inner-child1 .p2{
+        font-size: 28px;
+        position: absolute;
+        left: 38%;
+        top: 38%;
+    }
+    .inner-child1 .p3{
+        font-size: 40px;
+        position: absolute;
+        left: 18%;
+        top: 50%;
+    }
+    .options a{
+        display: none;
+    }
+    .head i{
+        display: block;
+        position: absolute;
+        left: 85%;
+        top: 25%;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #about h2{
+        font-size: 30px;
+        position: absolute;
+        top: 6%;
+        left: 16%;
+    }
+    #about{
+        height: 333svh;
+    }
+    .head1{
+        width: 100%;
+        height: 300svh;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 10%;
+    }
+    .head1 .box1{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border-radius: 20px;
+        transition: all 1s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .head1 .box1:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box1 .before{
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box1 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    .head1 .box1:hover .before{
+        top: 70%;
+    }
+    .head1 .box1 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box1:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box2{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box2:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box2 .before{
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box2:hover .before{
+        top: 70%;
+    }
+    .head1 .box2 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box2:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box2 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    .head1 .box3{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box3:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box3 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box3:hover .before{
+        top: 70%;
+    }
+    .head1 .box3 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box3:hover img{
+        border-radius: 8px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box3 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    .head1 .box4{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box4:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box4 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 100%;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box4:hover .before{
+        top: 70%;
+    }
+    .head1 .box4 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box4:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box4 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    .head1 .box5{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box5:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box5 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 100%;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box5:hover .before{
+        top: 70%;
+    }
+    .head1 .box5 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box5:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box5 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    .head1 .box6{
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        /* margin-top:100px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box6:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box6 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+    }
+    .head1 .box6:hover .before{
+        top: 70%;
+    }
+    .head1 .box6 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box6:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box6 .before p{
+        font-size: 8px;
+        color: white;
+    }
+    #Job .sidebox{
+        display: none;
+    }
+    .Mainbody{
+        width: 100%;
+    }
+    .Mainbody p{
+        position: absolute;
+        left: 30%;
+    }
+    .Mainbody .t1{
+        position: absolute;
+        left: 16%;
+    }
+    .Job1st i{
+        font-size: 30px;
+    }
+    .Job1st p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job1st .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;    
+    }
+    .Job1st #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 58%;
+        top: 18%;
+    }
+    .Job1st #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job1st .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job1st .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid green;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job1st .box1 p{
+        color: green;
+        font-size: 11px;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job1st .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job2nd i{
+        font-size: 30px;
+    }
+    .Job2nd p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job2nd .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;   
+    }
+    .Job2nd #i1{
+         font-size: 14px;
+        position: absolute;
+        left: 58%;
+        top: 18%;
+    }
+    .Job2nd #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job2nd .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job2nd .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid red;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job2nd .box1 p{
+        color: red;
+        font-size: 11px;
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job2nd .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job3rd img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 4%;
+        top: 20%;
+    }
+    .Job3rd p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job3rd .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;      
+    }
+    .Job3rd #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 72%;
+        top: 16%;
+    }
+    .Job3rd #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job3rd .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job3rd .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid rgb(56, 56, 255);
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job3rd .box1 p{
+        color: rgb(56, 56, 255);
+        font-size: 11px;
+        position: absolute;
+        top: 32%;
+        left: 18%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job3rd .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job4th img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 4%;
+        top: 20%;
+    }
+    .Job4th p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job4th .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;   
+    }
+    .Job4th #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 70%;
+        top: 18%;
+    }
+    .Job4th #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job4th .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job4th .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid rgb(56, 56, 255);
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job4th .box1 p{
+        color: rgb(56, 56, 255);
+        font-size: 11px;
+        position: absolute;
+        top: 32%;
+        left: 18%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job4th .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    #Candidate{
+        background-color: white;
+        widows: 100%;
+        height: 250svh;
+        position: relative;
+    }
+    #Candidate p{
+        position: absolute;
+        top: 10%;
+        left: 22%;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    #Candidate .t1{
+        position: absolute;
+        top: 14%;
+        left: 10%;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: lightslategray;
+    }
+    .cont{
+        width: 100%;
+        height: 150svh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cont .one{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    .cont .one:hover{
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px;
+    }
+    .cont .two{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+    }
+    .cont .two:hover{
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px;
+    }
+    .cont .three{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 80%;
+        left: 20%;
+    }
+    #contact h1{
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        font-size: 30px;
+        color: white;
+    }
+    #contact .h1{
+        position: absolute;
+        left: 60%;
+        top: 15%;
+        font-size: 30px;
+        color: white;
+    }
+    #contact h6{
+        position: absolute;
+        left: 10%;
+        top: 22%;
+        font-size: 12px;
+        color: white;
+    }
+    #contact i{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        cursor: pointer;
+    }
+    #contact #f1{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        cursor: pointer;
+    }
+    #contact #f2{
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        cursor: pointer;
+    }
+    #contact #f3{
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        cursor: pointer;
+    }
+    #contact #f4{
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        cursor: pointer;
+    }
+    #contact li{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 22%;
+        font-size: 18px;  
+    }
+    #contact .l21{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 32%;  
+    }
+    #contact .l3{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 42%;  
+    }
+    #contact .l4{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 52%;  
+    }
+    #contact .l5{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 62%;
+    }
+    #contact .l6{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 72%
+          
+    }
+    .AppStore{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        left: 5%;
+        top: 80%;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .AppStore img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .PlayStore{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        left:50%;
+        top: 80%;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .PlayStore img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }   
+    #contact .copy{
+        width: 100%;
+        height: 5svh;
+        position: absolute;
+        top: 95%;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+    #contact{
+        width: 100%;
+        height: 120svh;
+        background: linear-gradient(to right,rgb(63, 63, 63),black);
+        position: relative;
+    }
+}
+.menubar a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+.menubar a:hover{
+    color: aqua;
+}
+.menubar button{
+    width: 50px;
+    height: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+@media screen and ((max-width: 768px) and (min-width: 600px)){
+    .inner-child .p3{
+        font-size: 80px;
+        position: absolute;
+        left: 25%;
+        top: 40%;
+    }
+    .inner-child p{
+        font-size: 30px;
+        position: absolute;
+        left: 40%;
+        top: 35%;
+    }
+    .inner-child1 p{
+        font-size: 60px;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    .inner-child1 .p2{
+        font-size: 30px;
+        position: absolute;
+        left: 40%;
+        top: 38%;
+    }
+    .inner-child1 .p3{
+        font-size: 60px;
+        position: absolute;
+        left: 18%;
+        top: 50%;
+    }
+    .options a{
+        display: none;
+    }
+
+    .head i{
+        display: block;
+        position: absolute;
+        left: 85%;
+        top: 25%;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #about h2{
+        font-size: 40px;
+        position: absolute;
+        top: 8%;
+        left: 20%;
+    }
+    #about{
+        height: 200svh;
+    }
+    .head1{
+        width: 100%;
+        height: 200svh;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 14%;
+    }
+    .head1 .box1{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        border: 1px solid black;
+        /* margin-top:150px;
+        margin-left: 50px; */
+        border-radius: 20px;
+        transition: all 1s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .head1 .box1:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box1 .before{
+        background-color: black;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box1 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    .head1 .box1:hover .before{
+        top: 70%;
+    }
+    .head1 .box1 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box1:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box2{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        border: 1px solid black;
+        /* margin-top:150px;
+        margin-left: 160px; */
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box2:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box2 .before{
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box2:hover .before{
+        top: 70%;
+    }
+    .head1 .box2 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box2:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box2 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    .head1 .box3{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        /* margin-top:10px;
+        margin-left: 50px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box3:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box3 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 20px;
+        top: 100%;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box3:hover .before{
+        top: 70%;
+    }
+    .head1 .box3 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box3:hover img{
+        border-radius: 8px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box3 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    .head1 .box4{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        /* margin-top:10px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box4:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box4 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 100%;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box4:hover .before{
+        top: 70%;
+    }
+    .head1 .box4 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box4:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box4 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    .head1 .box5{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        /* margin-top:10px;
+        margin-left: 50px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box5:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box5 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 100%;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box5:hover .before{
+        top: 70%;
+    }
+    .head1 .box5 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box5:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box5 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    .head1 .box6{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        /* margin-top: 10px;
+        margin-left: 160px; */
+        border: 1px solid black;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    .head1 .box6:hover{
+        transform: scale(1.01);
+        border: 1px solid white;
+        box-shadow: 0px 0px 20px 5px whitesmoke;
+    }
+    .head1 .box6 .before{
+        content: "";
+        background: linear-gradient(to right,#3D52A0,#7091E6,#8697C4);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        border-radius: 20px;
+        transition: all 1s ease;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+    .head1 .box6:hover .before{
+        top: 70%;
+    }
+    .head1 .box6 img{
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .head1 .box6:hover img{
+        border-radius: 20px;
+        height: 75%;
+        transform: scale(0.8);
+    }
+    .head1 .box6 .before p{
+        font-size: 10px;
+        color: white;
+    }
+    #Job .sidebox{
+        display: none;
+    }
+    .Mainbody{
+        width: 100%;
+    }
+    .Mainbody p{
+        position: absolute;
+        left: 40%;
+    }
+    .Mainbody .t1{
+        position: absolute;
+        left: 32%;
+    }
+    .Job1st i{
+        font-size: 30px;
+    }
+    .Job1st p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job1st .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;    
+    }
+    .Job1st #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 45%;
+        top: 18%;
+    }
+    .Job1st #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job1st .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job1st .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid green;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job1st .box1 p{
+        color: green;
+        font-size: 11px;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job1st .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job2nd i{
+        font-size: 30px;
+    }
+    .Job2nd p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job2nd .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;   
+    }
+    .Job2nd #i1{
+         font-size: 14px;
+        position: absolute;
+        left: 45%;
+        top: 18%;
+    }
+    .Job2nd #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job2nd .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job2nd .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid red;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job2nd .box1 p{
+        color: red;
+        font-size: 11px;
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job2nd .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job3rd img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 4%;
+        top: 20%;
+    }
+    .Job3rd p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job3rd .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;      
+    }
+    .Job3rd #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 53%;
+        top: 16%;
+    }
+    .Job3rd #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job3rd .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job3rd .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid rgb(56, 56, 255);
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job3rd .box1 p{
+        color: rgb(56, 56, 255);
+        font-size: 11px;
+        position: absolute;
+        top: 32%;
+        left: 18%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job3rd .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .Job4th img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 4%;
+        top: 20%;
+    }
+    .Job4th p{
+        color: rgb(255, 70, 70);
+        position: absolute;
+        left: 19%;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    .Job4th .t1{
+        color: lightseagreen;
+        position: absolute;
+        left: 19%;
+        top: 40%;
+        font-size: 13px;
+        font-family: sans-serif;   
+    }
+    .Job4th #i1{
+        font-size: 14px;
+        position: absolute;
+        left: 51%;
+        top: 18%;
+    }
+    .Job4th #i2{
+        font-size: 14px;
+        position: absolute;
+        left: 16.5%;
+        top: 60%;
+    }
+    .Job4th .loc1{
+        color: lightslategrey;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        font-size: 12px;
+    }
+    .Job4th .box1{
+        width: 80px;
+        height: 40px;
+        position: absolute;
+        left: 80%;
+        top: 35%;
+        border: 3px solid rgb(56, 56, 255);
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 10px;
+    }
+    .Job4th .box1 p{
+        color: rgb(56, 56, 255);
+        font-size: 11px;
+        position: absolute;
+        top: 32%;
+        left: 18%;
+        transition: all 1s ease;
+        font-family: sans-serif;
+    }
+    .Job4th .box1 #p1{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    #Candidate{
+        background-color: white;
+        widows: 100%;
+        height: 250svh;
+        position: relative;
+    }
+    #Candidate p{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    #Candidate .t1{
+        position: absolute;
+        top: 14%;
+        left: 20%;
+        font-size: 15px;
+        font-family: sans-serif;
+        color: lightslategray;
+    }
+    .cont{
+        width: 100%;
+        height: 150svh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cont .one{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    .cont .one:hover{
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px;
+    }
+    .cont .two{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+    }
+    .cont .two:hover{
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 10px;
+    }
+    .cont .three{
+        width: 300px;
+        height: 300px;
+        position: relative;
+        transition: all 1s ease;
+        cursor: pointer;
+        position: absolute;
+        top: 80%;
+        left: 30%;
+    }
+    #contact h1{
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        font-size: 30px;
+        color: white;
+    }
+    #contact .h1{
+        position: absolute;
+        left: 60%;
+        top: 15%;
+        font-size: 30px;
+        color: white;
+    }
+    #contact h6{
+        position: absolute;
+        left: 10%;
+        top: 22%;
+        font-size: 12px;
+        color: white;
+    }
+    #contact i{
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        cursor: pointer;
+    }
+    #contact #f1{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        cursor: pointer;
+    }
+    #contact #f2{
+        position: absolute;
+        top: 35%;
+        left: 15%;
+        cursor: pointer;
+    }
+    #contact #f3{
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        cursor: pointer;
+    }
+    #contact #f4{
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        cursor: pointer;
+    }
+    #contact li{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 22%;
+        font-size: 18px;  
+    }
+    #contact .l21{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 32%;  
+    }
+    #contact .l3{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 42%;  
+    }
+    #contact .l4{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 52%;  
+    }
+    #contact .l5{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 62%;
+    }
+    #contact .l6{
+        color: white;
+        position: absolute;
+        left: 65%;
+        top: 72%
+          
+    }
+    .AppStore{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        left: 5%;
+        top: 80%;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .AppStore img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .PlayStore{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        left:50%;
+        top: 80%;
+        border-radius: 10px;
+        border: 1px solid white;
+    }
+    .PlayStore img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }   
+    #contact .copy{
+        width: 100%;
+        height: 5svh;
+        position: absolute;
+        top: 95%;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+    }
+    #contact{
+        width: 100%;
+        height: 120svh;
+        background: linear-gradient(to right,rgb(63, 63, 63),black);
+        position: relative;
+    }
+}

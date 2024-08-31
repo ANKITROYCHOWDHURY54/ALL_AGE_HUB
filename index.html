@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./CSS/index.css">
+    </head>
+    <body style="background-color: black;">
+        <div class="first_main" >
+            <div class="container1" id="container1">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="imgg"><img src="./images/all-age-hub-high-resolution-logo-white-transparent.png"></div>
+            </div>
+        </div>
+        <script>
+            let timer;
+    
+            document.getElementById('container1').onmouseover = function() {
+                timer = setTimeout(function() {
+                    window.location.href = './HTML/login_page.html'; 
+                }, 2000); 
+            };
+    
+            document.getElementById('container1').onmouseout = function() {
+                clearTimeout(timer);
+            };
+        </script>
+    </body>
+</html>

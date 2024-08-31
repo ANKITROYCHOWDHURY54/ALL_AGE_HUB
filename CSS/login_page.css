@@ -1,0 +1,270 @@
+body
+{
+    width: 101%;
+    height: 100%;
+    /* background-image: url("https://img.freepik.com/free-photo/full-shot-family-silhouette-having-fun-sunset_23-2150456197.jpg?t=st=1721881441~exp=1721885041~hmac=1b9c245c88bc104d1e6ec03d349632be2a18505065554746a67be020169f4fcb&w=1060"); */
+    background-repeat: no-repeat;
+    background-size: 100% 300%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 1%;
+    margin-left: -1%;
+}
+.login_main
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_nav
+{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin-top: -0.2%;
+    overflow-x: hidden;
+}
+.login_body
+{
+    width: 100%;
+    height: 80%;
+}
+.login_logo
+{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.login_logo img
+{
+  height: 60px;
+  width: 60px;
+  margin-left: 3%;
+}
+.login_sign
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and ( max-width:400px)
+{ 
+  .login_nav
+  {
+    height: 70px;
+  }
+  img
+  {
+    height: 30px;
+    width: 30px;
+  }
+  .login_sign
+  {
+    font-size: 15px;
+  }
+}
+@media screen and ( max-width:425px)
+{ 
+  .login_nav
+  {
+    height: 50px;
+  }
+  img
+  {
+    height: 30px;
+    width: 30px;
+  }
+  .login_sign
+  {
+    font-size: 15px;
+  }
+}
+@media screen and ( max-width:320px)
+{ 
+  .login_nav
+  {
+    height: 50px;
+  }
+  img
+  {
+    height: 30px;
+    width: 30px;
+  }
+  .login_sign
+  {
+    font-size: 10px;
+  }
+}
+.vid{
+  width: 101%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+video{
+  width: 101%;
+  position: absolute;
+  z-index: -999;
+  top: 0;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=email]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login_btn
+{
+  font-weight: 700;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 14px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  color: black;
+}
+.btn_login
+{
+  font-weight: 700;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 14px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  color: white;
+}
+
+.btn_login:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: black;
+}
+.login_btn:hover {
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: black;
+  color: white;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.login_icon {
+  display: flex;
+  justify-content: center;
+  font-size: 55px;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 500px; 
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+

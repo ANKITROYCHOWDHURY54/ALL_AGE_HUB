@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(136, 136, 255);
+    width: 100%;
+    height: 100svh;
+}
+.container .head{
+    width: 100%;
+    height: 40svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/107028033-1646863344215-GettyImages-1316107530.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    background-size: cover;
+    opacity: 40%;
+}
+.container h1{
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 40%;    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container .box1{
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all 1s ease;
+    border-radius: 50px;
+}
+.container .box1 p{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    transition: all 1s ease;
+    font-family: sans-serif;
+}
+.container .box1:hover{
+    background-color: white;
+}
+.container .box1:hover p{
+    color: black;
+}
+.container .loc1{
+    color: white;
+    position: absolute;
+    left: 49%;
+    top: 26%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container #i2{
+    font-size: 17px;
+    position: absolute;
+    left: 47%;
+    top: 26.5%
+}
+.container #i1{
+    font-size: 17px;
+    position: absolute;
+    left: 63%;
+    top: 26.5%
+}
+.container #p1{
+    position: absolute;
+    top: 26%;
+    left: 65%;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.container .body{
+    width: 100%;
+    height: 90svh;
+    background-color: white;
+    position: relative;
+}
+.body .head1{
+    width: 100%;
+    height: 25svh;
+    position: relative;
+}
+.body .image1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left:10%;
+    top: 10%;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.image1 img{
+    width: 100%;
+    height: 100%;
+}
+.head1 .t1{
+    color: black;
+    position: absolute;
+    left: 18%;
+    top: 20%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+.head1 #i1{
+    font-size: 17px;
+    position: absolute;
+    left: 19%;
+    top: 43%
+}
+.head1 #i2{
+    font-size: 17px;
+    position: absolute;
+    left: 35%;
+    top: 42%
+}
+.head1 a{
+    position: absolute;
+    top: 41%;
+    left: 21%;
+    text-decoration: none;
+    color: lightslategray;
+}
+.head1 .t2{
+    position: absolute;
+    top: 41%;
+    left: 37%;  
+    color: lightslategray;
+}
+.head1 #i3{
+    font-size: 17px;
+    position: absolute;
+    left: 48%;
+    top: 42%
+}
+.head1 .t3{
+    position: absolute;
+    top: 41%;
+    left: 50%;  
+    color: lightslategray;
+}
+.body1{
+    width: 60%;
+    height: 100svh;
+    position: absolute;
+    left: 10%;
+}
+.body1 p{
+    font-size: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 5%;
+}
+.body1 .t1{
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    color: lightslategray;      
+}
+.body1 .t2{
+    font-size: 30px;
+    position: absolute;
+    font-family: sans-serif;
+    top: 42%;
+}
+.body1 .t3{
+    font-size: 18px;
+    position: absolute;
+    top: 48%;
+    color: lightslategray;
+}
+.Apply{
+    background-color: rgb(251, 61, 106);
+    width: 90%;
+    height: 6svh;
+    position: absolute;
+    top: 70%;
+    left:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Apply:hover{
+    background-color: #555555;
+}
+.Apply p{
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .container .head{
+        width: 100%;
+        height: 30svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./107028033-1646863344215-GettyImages-1316107530.jpg);
+        background-repeat: no-repeat;
+        background-position-y: -100px;
+        background-size: cover;
+        opacity: 40%;
+    }
+    .container h1{
+        color: white;
+        position: absolute;
+        top: 5%;
+        left: 20%;    
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container .box1{
+        width: 120px;
+        height: 40px;
+        position: absolute;
+        left: 35%;
+        top: 12%;
+        border: 3px solid white;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 50px;
+    }
+    .container .loc1{
+        color: white;
+        position: absolute;
+        left: 42%;
+        top: 20%;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .container #i2{
+        font-size: 17px;
+        position: absolute;
+        left: 38%;
+        top: 20.5%
+    }
+    .container #i1{
+        font-size: 17px;
+        position: absolute;
+        left: 38%;
+        top: 26.5%
+    }
+    .container #p1{
+        position: absolute;
+        top: 26%;
+        left: 42%;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+    .container .body{
+        width: 100%;
+        height: 90svh;
+        background-color: white;
+        position: relative;
+    }
+    .body .head1{
+        width: 100%;
+        height: 50svh;
+        position: relative;
+    }
+    .body .image1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left:40%;
+        top: 10%;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+    .image1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .head1 .t1{
+        color: black;
+        position: absolute;
+        left: 42%;
+        top: 50%;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    }
+    .head1 #i1{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 62%
+    }
+    .head1 #i2{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 75%
+    }
+    .head1 a{
+        position: absolute;
+        top: 62%;
+        left: 38%;
+        text-decoration: none;
+        color: lightslategray;
+    }
+    .head1 .t2{
+        position: absolute;
+        top: 75%;
+        left: 38%;  
+        color: lightslategray;
+    }
+    .head1 #i3{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 90%
+    }
+    .head1 .t3{
+        position: absolute;
+        top: 89%;
+        left: 40%;  
+        color: lightslategray;
+    }
+    .body1{
+        width: 80%;
+        height: 80svh;
+        position: absolute;
+        left: 10%;
+    }
+    .body1 p{
+        font-size: 30px;
+        font-family: sans-serif;
+        position: absolute;
+        top: 5%;
+    }
+    .body1 .t1{
+        font-size: 12px;
+        position: absolute;
+        top: 15%;
+        color: lightslategray;      
+    }
+    .body1 .t2{
+        font-size: 25px;
+        position: absolute;
+        font-family: sans-serif;
+        top: 50%;
+    }
+    .body1 .t3{
+        font-size: 12px;
+        position: absolute;
+        top: 60%;
+        color: lightslategray;
+    }
+    .Apply{
+        background-color: rgb(251, 61, 106);
+        width: 50%;
+        height: 6svh;
+        position: absolute;
+        top: 90%;
+        left: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+@media screen and ((max-width: 1024px) and (min-width:600px)){
+    .container .head{
+        width: 100%;
+        height: 33.5svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./107028033-1646863344215-GettyImages-1316107530.jpg);
+        background-repeat: no-repeat;
+        background-position-y: -100px;
+        background-size: cover;
+        opacity: 40%;
+    }
+    .container h1{
+        color: white;
+        position: absolute;
+        top: 5%;
+        left: 25%;    
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container .box1{
+        width: 120px;
+        height: 40px;
+        position: absolute;
+        left: 38%;
+        top: 12%;
+        border: 3px solid white;
+        cursor: pointer;
+        transition: all 1s ease;
+        border-radius: 50px;
+    }
+    .container .loc1{
+        color: white;
+        position: absolute;
+        left: 42%;
+        top: 20%;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .container #i2{
+        font-size: 17px;
+        position: absolute;
+        left: 38%;
+        top: 20.5%
+    }
+    .container #i1{
+        font-size: 17px;
+        position: absolute;
+        left: 38%;
+        top: 26.5%
+    }
+    .container #p1{
+        position: absolute;
+        top: 26%;
+        left: 42%;
+        font-size: 20px;
+        color: white;
+        font-family: sans-serif;
+    }
+    .container .body{
+        width: 100%;
+        height: 90svh;
+        background-color: white;
+        position: relative;
+    }
+    .body .head1{
+        width: 100%;
+        height: 50svh;
+        position: relative;
+    }
+    .body .image1{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left:40%;
+        top: 10%;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+    .image1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .head1 .t1{
+        color: black;
+        position: absolute;
+        left: 42%;
+        top: 50%;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    }
+    .head1 #i1{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 62%
+    }
+    .head1 #i2{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 75%
+    }
+    .head1 a{
+        position: absolute;
+        top: 62%;
+        left: 38%;
+        text-decoration: none;
+        color: lightslategray;
+    }
+    .head1 .t2{
+        position: absolute;
+        top: 75%;
+        left: 38%;  
+        color: lightslategray;
+    }
+    .head1 #i3{
+        font-size: 17px;
+        position: absolute;
+        left: 28%;
+        top: 90%
+    }
+    .head1 .t3{
+        position: absolute;
+        top: 89%;
+        left: 40%;  
+        color: lightslategray;
+    }
+    .body1{
+        width: 80%;
+        height: 80svh;
+        position: absolute;
+        left: 10%;
+    }
+    .body1 p{
+        font-size: 30px;
+        font-family: sans-serif;
+        position: absolute;
+        top: 5%;
+    }
+    .body1 .t1{
+        font-size: 16px;
+        position: absolute;
+        top: 15%;
+        color: lightslategray;      
+    }
+    .body1 .t2{
+        font-size: 25px;
+        position: absolute;
+        font-family: sans-serif;
+        top: 52%;
+    }
+    .body1 .t3{
+        font-size: 16px;
+        position: absolute;
+        top: 60%;
+        color: lightslategray;
+    }
+    .Apply{
+        background-color: rgb(251, 61, 106);
+        width: 50%;
+        height: 6svh;
+        position: absolute;
+        top: 90%;
+        left: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

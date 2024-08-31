@@ -1,0 +1,636 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.tourism_parent {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid red; */
+    position: relative;
+    margin: 0;
+}
+
+.tourism_child1 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    filter: brightness(65%);
+}
+
+.tourism_child1 img {
+    width: 100%;
+    height: 100%;
+}
+
+li button {
+    display: none;
+}
+
+.slick-dots {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 48%;
+    bottom: -5%;
+}
+
+.button_1 {
+    display: none !important;
+}
+
+.tourism_header {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99999999999;
+}
+
+.tourism_header1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.tourism_header1 img{
+    width: 70px;
+    height: 70px;
+    margin-left: 5%;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+.tourism_header2 {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tourism_header2_1 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.tourism_header2_2 {
+    display: none;
+}
+
+.tourism_icon {
+    display: none;
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: 65%;
+    right: 1.5%;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.tourism_icon1 {
+    margin-bottom: 17px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tourism_text1 {
+    width: 35%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 36px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .tourism_header2_1 {
+        display: none;
+    }
+
+    .tourism_header2_2 {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+    }
+
+    .tourism_parent {
+        height: 50%;
+    }
+
+    .tourism_text1 {
+        font-size: 20px;
+        top: 120px;
+        left: 10px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tourism_header2_1 {
+        display: none;
+    }
+
+    .tourism_header2_2 {
+        display: block;
+        position: absolute;
+        top: 25%;
+        right: 5%;
+    }
+
+    .tourism_text1 {
+        font-size: 26px;
+    }
+}
+
+.tourism_body1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid red; */
+}
+
+.tourism_body1_t1 {
+    width: 100%;
+    height: 10%;
+    font-size: 28px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.tourism_card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* border: 2px solid red; */
+}
+
+.tourism_card1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tourism_card2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tourism_card1_1 {
+    width: 310px;
+    height: 180px;
+    background-color: rgb(19, 11, 11);
+    margin: 1%;
+}
+
+.tourism_card1_12, .tourism_card1_11 {
+    width: 330px;
+    height: 180px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.tourism_card1_12 {
+    top: 116%;
+}
+
+.tourism_card1_11 {
+    top: 150%;
+    z-index: -9999;
+}
+
+.tourism_card1_1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.tourism_card1_1:hover {
+    transition: all 1s;
+    transform: scale(1.05);
+}
+
+.tourism_2child1 {
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+.tourism_2child1 video {
+    /* border: 1px solid red; */
+    /* width: 90%;
+    height: 60%; */
+    width: 300px;
+    height: 200px;
+}
+
+.tourism_2child2 {
+    width: 700px;
+    height: auto;
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    /* border: 2px solid black; */
+    
+}
+
+.tourism_c1 {
+    width: 100%;
+    height: 15%;
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.tourism_c2 {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    /* display: flex; */
+    /* border: 1px solid purple; */
+    /* justify-content: start;
+    align-items: start; */
+    /* text-align: center; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-top:20px;
+}
+@media screen and (max-width:500px){
+    .tourism_c2{
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
+
+.tourism_c3 {
+    text-align: justify;
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.tourism_c4 {
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.tourism_cc {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-left:20px ;
+    /* border: 2px solid red; */
+}
+
+.tourism_c5 {
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+}
+
+
+.tourism_cc1 {
+    width: 5%;
+    height: 25%;
+    /* background-color: red; */
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px 10px; */
+}
+
+.tourism_cc2 {
+    text-align: justify;
+    width: 90%;
+    height: auto;
+    /* background-color: red; */
+    font-size: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+/* 
+@media screen and (max-width: 1000px) {
+    .flip-card{
+        height: auto;
+    }
+    .flip-card-inner{
+        height: auto;
+    }
+    .flip-card-front{
+        /* height: auto; */
+        /* display: flex;
+        flex-direction: column;
+    } 
+    .flip-card-front{
+         height: auto; 
+        display: flex;
+        /* flex-direction: column;  
+        flex-wrap: wrap;
+    }
+    .tourism_body2 {
+        /* height: auto; 
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: auto;
+    }
+    .tourism_2child2 {
+        width: 600px;
+        /* height:auto; 
+    }
+   .tourism_2child1{
+    width: 500px;
+    /* height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+} */
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 99.8%;
+    height: auto;
+    perspective: 1000px;
+    /* border: 5px solid red; */
+    /* border: 5px solid red; */
+  }
+  
+  .flip-card-inner {
+   
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
+
+  }
+  
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  } */
+  
+  .flip-card-front, .flip-card-back {
+    display:flex ;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    /* height: auto; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+     /* flex-direction: column; */
+  }
+  
+  .flip-card-front {
+    /* background-color: #bbb; */
+    color: black;
+    /* border: 2px solid aqua; */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flip-card-back {
+    /* background-color: #2980b9; */
+    /* color: white; */
+    height: 100%;
+    height: 400px;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back video{
+    width: 100%;
+    height: 100%;
+  }
+  /* @media screen and (max-width:1000px) {
+    .flip-card-inner{
+        width: 100%;
+        flex-direction: column;
+       align-items: center;
+    }   
+s
+     .tourism_2child1 .tourism_2child2{
+        width: 100%;
+    }
+  } */
+  .last{
+    width: 99.8%;
+    height: 50%;
+    /* background-color: brown; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* top: 100%; */
+    /* border: 5px solid red; */
+  }
+  /* @media screen and (max-width:1000px) {
+    .tourism_footer{
+        margin-top: 255px;
+    }
+  } */
+  /* @media screen and (max-width:900px) {
+    .tourism_footer{
+        margin-top: 250px;
+    }
+  }
+  @media screen and (max-width:700px) {
+    .tourism_footer{
+        margin-top: 200px;
+    }
+  } */
+  .tourism_footer1{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tourism_footer1 img{
+    width: 150px;
+    height: 150px;
+  }
+  .tourism_footer2{
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .tourism_f1{
+    width: 90%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+  }
+  .tourism_f2{
+    width: 90%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+  }
+  .tourism_f3{
+    width: 90%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+  }
+  .tourism_f11{
+    width: 10%;
+    height: 100%;
+    color: white;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tourism_f12{
+    width: 100%;
+    height: 100%;
+    color: white;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .tourism_f31{
+    width: 30%;
+    height: 100%;
+    color: white;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .tourism_f32{
+    width: 20%;
+    height: 100%;
+    color: white;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+
+@media screen and (max-width:500px) {
+    .last{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .tourism_footer1{
+        width: 550px;
+    }
+    .tourism_footer2{
+        width: 770px;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .last{
+        margin-top: 100px;
+    }
+}
+
+  .last{
+    width: 100%;
+    height: 50svh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+  

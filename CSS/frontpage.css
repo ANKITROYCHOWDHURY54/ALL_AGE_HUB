@@ -1,0 +1,84 @@
+.back{
+    height:100%;
+    width:100%;
+    background-image: url("https://wallpapercave.com/wp/iUmIrGM.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    perspective:100px;
+    overflow: hidden;
+}
+.left{
+    height:100%;
+    width:50%;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.Z9o7fUda0j5UnOVZsScpagHaEn&pid=Api&P=0&h=180");
+    background-size: 100% 100%;
+    animation-name: my_animation;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+.right{
+    height:100%;
+    width:50%;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.Z9o7fUda0j5UnOVZsScpagHaEn&pid=Api&P=0&h=180");
+    background-size: 100% 100%;
+    transition:all 2s;
+    animation-name: my_animation1;
+    animation-duration: 4s;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+@keyframes my_animation{
+    0%{
+        left:0px;
+    }
+    50%{
+        left:-200px;
+    }
+    70%{
+        left:-400px;
+    }
+    100%{
+         left:-800px;
+    }
+}
+@keyframes my_animation1{
+    0%{
+        right:0px;
+    }
+    50%{
+        right:-200px;
+    }
+    70%{
+        right:-400;
+    }
+    100%{
+        right:-800px;
+    }
+}
+.back::before{
+    height:30%;
+    width:30%;
+    content:"";
+    position: absolute;
+    top:-30%;
+    background-image: url("https://png.pngtree.com/png-clipart/20220124/original/pngtree-3d-gold-movie-text-effect-editable-png-image_7173019.png");
+    background-size: 100% 100%;
+    transition: all 4s;
+    transition-delay: 3s;
+    left:38%;
+}
+.back:hover::before{
+    top:100px;
+}
+.but1{
+    font-size: 20px;
+    width:100px;
+    height:50px;
+    background: linear-gradient(to right, #F96693,#DA69A1,#B36AB3 );
+    color: white;
+    position: absolute;
+    top:40%;
+    left:45%;
+    border-radius: 20px;
+}

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/login_page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="login_main">
+        <div class="login_nav">
+            <div class="login_logo"><img src="../images/all-age-hub-high-resolution-logo-white-transparent.png"></div>
+            <div class="login_sign">
+                <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="btn_login">Sign Up</button>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn_login">Login</button>
+            </div>
+        </div>
+        
+        <div class="login_body">
+          <div class="vid">
+          <video autoplay loop muted>
+              <source src="../Videos/loginvideo.mp4">
+            </video>
+          </div>
+           <div id="id01" class="modal">
+        <form class="modal-content animate" action="javascript:void(0);" onsubmit="loginUser()">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <div class="login_icon"><i class="fa-solid fa-circle-user"></i></div>
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="login-username" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="login-password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit" class="login_btn">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="javascript:void(0);" onsubmit="signUpUser()">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <div class="login_icon"><i class="fa-solid fa-circle-user"></i></div>
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" id="signup-username" placeholder="Enter Username" name="uname" required>
+    
+          <label for="email"><b>Email</b></label><br>
+          <input type="email" id="signup-email" placeholder="Enter Email" name="email" required><br>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="signup-password" placeholder="Enter Password" name="psw" required>
+          
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" id="signup-password-repeat" placeholder="Repeat Password" name="psw-repeat" required>
+          
+          <button type="submit" class="login_btn">Sign Up</button>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+      </form>
+    </div>
+        </div>
+      </div>
+<script>
+var loginModal = document.getElementById('id01');
+var signUpModal = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == loginModal) {
+        loginModal.style.display = "none";
+    }
+    if (event.target == signUpModal) {
+        signUpModal.style.display = "none";
+    }
+}
+
+function signUpUser() {
+    var username = document.getElementById('signup-username').value;
+    var email = document.getElementById('signup-email').value;
+    var password = document.getElementById('signup-password').value;
+    var passwordRepeat = document.getElementById('signup-password-repeat').value;
+
+    if (password !== passwordRepeat) {
+        alert('Passwords do not match');
+        return;
+    }
+
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    var userExists = users.some(user => user.username === username || user.email === email);
+
+    if (userExists) {
+        alert('User with this username or email already exists');
+        return;
+    }
+
+    users.push({ username: username, email: email, password: password });
+    localStorage.setItem('users', JSON.stringify(users));
+    alert('User signed up successfully');
+    document.getElementById('id02').style.display = 'none';
+}
+
+function loginUser() {
+    var username = document.getElementById('login-username').value;
+    var password = document.getElementById('login-password').value;
+
+    var users = JSON.parse(localStorage.getItem('users')) || [];
+    var user = users.find(user => user.username === username && user.password === password);
+
+    if (user) {
+        alert('Login successful');
+        document.getElementById('id01').style.display = 'none';
+        window.location.href = './homepage.html'; // Redirect to another HTML page
+    } else {
+        alert('User not found or incorrect password');
+    }
+}
+</script>
+</body>
+</html>

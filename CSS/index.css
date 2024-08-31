@@ -1,0 +1,109 @@
+@property --progress {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+:root {
+  --c1: #6eccee;
+  --c2: #f672ca;
+  --c3: #fdb428;
+  --c4: #b9f;
+}
+
+@keyframes progress {
+  from {
+    --progress: 0%;
+  }
+
+  to {
+    --progress: 100%;
+  }
+}
+
+.circle {
+    --progress: 60%;
+  @supports (background: paint(houdini)) {
+      --progress: 0%;
+  }
+  background: conic-gradient(
+    at center,
+    var(--c1) var(--progress),
+    black var(--progress),
+    var(--c2) calc(var(--progress) + 20%),
+    var(--c3) calc(var(--progress) + 30%),
+    var(--c3) calc(var(--progress) + 50%),
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
+  animation: progress 4s linear infinite;
+  border-radius: 50%;
+  mask: radial-gradient(circle at center, transparent 65%, black 65%);
+  position: absolute;
+  inset: 0;
+
+  &:nth-child(2) {
+    inset: 4vmin;
+    animation-delay: 1s;
+  }
+
+  &:nth-child(3) {
+    inset: 8vmin;
+    animation-delay: 0.5s;
+  }
+}
+.first_main
+{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1 {
+  filter: drop-shadow(0 0 0.8vmin hsla(0, 0, 0%, 1));
+  position: relative;
+  width: 40vmin;
+  aspect-ratio: 1;
+  animation-delay: 3s;
+
+  &:after {
+    content: "";
+    font-weight: bold;
+    position: absolute;
+    font-size: 2.5vmin;
+    inset: 0;
+    color: white;
+    display: grid;
+    place-items: center;
+  }
+}
+
+.imgg
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img
+{
+  height: 100px ;
+  width: 100px;
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, Inter, "Helvetica Neue", Helvetica, sans-serif;
+  color: var(--c1);
+  /* display: grid; */
+  place-items: center;
+  overflow: hidden;
+}
+
+
+            

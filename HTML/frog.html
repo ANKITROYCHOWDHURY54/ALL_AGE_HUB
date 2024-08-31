@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="../CSS/frog.css">
+</head>
+<body>
+    <div class="random-number" id="randomNumber"></div>
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="container">
+        <div class="div1" id="div1"></div>
+        <div class="div2" id="div2"></div>
+        <div class="div3" id="div3"></div>
+        <div class="div4" id="div4"></div>
+        <div class="div5" id="div5"></div>
+        <div class="div6" id="div6"></div>
+        <div class="div7" id="div7"></div>
+        <div class="div8" id="div8"></div>
+        <div class="div9" id="div9"></div>
+        <div class="div10" id="div10"></div>
+        <div class="div11" id="div11"></div>
+    </div>
+    <div id="chocolate">
+        <img src="https://img.freepik.com/free-photo/dark-chocolate-truffles-close-up_23-2148349177.jpg?ga=GA1.1.639928877.1718960180&semt=ais_user" alt="Chocolate">
+        <p>You own this chocolate!</p>
+    </div>
+    <audio id="frogSound" src="frog-croaks-22312.mp3"></audio>
+    <script>
+        document.getElementById('match').addEventListener('click',function() {
+            window.location.href='./tic.html';
+            
+        });
+    </script>
+    <script src="../JS/frog.js"></script>
+</body>
+</html>
